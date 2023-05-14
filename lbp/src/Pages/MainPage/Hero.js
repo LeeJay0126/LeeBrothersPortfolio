@@ -1,12 +1,14 @@
+import { useState } from "react";
 
+const Hero = () => {
+  const [isHovered, setHovered] = useState(false);
+  const [ifHovered, setHover] = useState("none");
 
-const Hero = () =>{
-
-    return (
-        <div className="HeroContainer">
-            
-        </div>
-    );
+  return (
+  <div className="HeroContainer">
+    
+  </div>
+  );
 };
 
 export default Hero;
