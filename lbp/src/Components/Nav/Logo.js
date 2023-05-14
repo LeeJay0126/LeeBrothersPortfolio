@@ -3,7 +3,7 @@ const Logo = () => {
     return (
         <div>
             <p className="Logo">
-                LeeBrothers
+                Jay & Asen
             </p>
         </div>
     );
