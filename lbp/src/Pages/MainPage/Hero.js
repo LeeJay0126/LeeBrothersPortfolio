@@ -1,14 +1,19 @@
 import { useState } from "react";
+import MainHero from "./MainHero";
 
 const Hero = () => {
-  const [isHovered, setHovered] = useState(false);
-  const [ifHovered, setHover] = useState(false);
+  //useState that determines which brother is being displayed
+  //false = Jay, true = Asen
+  const [brother, setBrother] = useState(false);
+  //useState that determines if image should be expanded
+  const [isClicked, setClicked] = useState(false);
 
-  return (
-  <div className="HeroContainer">
-    
-  </div>
-  );
+  return(
+    <div>
+      <MainHero setBrother={setBrother} isClicked={isClicked} setClicked={setClicked}/>
+    </div>
+  )
+
 };
 
 export default Hero;
